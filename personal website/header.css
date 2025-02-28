@@ -1,0 +1,171 @@
+.header
+{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    background-color:#27445d;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow: 2px 2px 5px #192e3f;
+}
+.left
+{
+
+    margin-top:7px;
+    margin-left:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:7px;
+   
+}
+.header-pic
+{
+    width:46px;
+    height:46px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:25px;
+    margin-right:20px;
+    cursor:pointer;
+    border:2px solid #efe9d5;
+}
+.insta_logo
+{
+    width:30px;
+    object-fit:cover;
+    object-position:center;
+    margin-left:-30px;
+    opacity:0;
+    margin-top:0px;
+}
+.insta_id
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    background-color:transparent;
+    margin-left:5px;
+    cursor:pointer;
+    border-radius:20px;
+    height:40px;
+    transition: background-color 0.5s, color 0.5s;
+}
+.insta_id:hover
+{
+    background-color:#efe9d5;
+    color:#192e3f;
+    border-radius:20px;
+    .insta_logo
+    {
+        opacity:1;
+    }
+    .id
+    {
+        color:#192e3f;
+    }
+}
+.insta_id:active
+{
+    background-color:#192e3f;
+    color:#efe9d5;
+    border-radius:20px;
+    .insta_logo
+    {
+        opacity:0;
+    }
+    .id
+    {
+        color:#efe9d5;
+    }
+}
+.id
+{
+    margin-top:0px;
+    margin-bottom:0px;
+    color:#efe9d5;
+    font-weight:thin;
+    margin-left:4px;
+}
+.linkedin_id,.github_id
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    background-color:transparent;
+    margin-left:15px;
+    cursor:pointer;
+    border-radius:20px;
+    height:40px;
+    transition: background-color 0.5s, color 0.5s;
+    position:relative;
+}
+.link_img
+{
+    border-radius:4px;
+    position:absolute;
+    margin-left:-38px;
+    opacity:0;
+    margin-right:15px;
+    width:32px;
+    height:32px;
+}
+.linkedin_id:hover, .github_id:hover
+{
+    background-color:#efe9d5;
+    color:#192e3f;
+    border-radius:20px;
+    .link_img,.git_img
+    {
+        opacity:1;
+    }
+    .id
+    {
+        color:#192e3f;
+    }
+}
+.git_img
+{
+    border-radius:4px;
+    position:absolute;
+    margin-left:-30px;
+    opacity:0;
+    margin-right:15px;
+    width:32px;
+    height:32px;
+}
+.menu_btn
+{
+    width:30px;
+    background-color:#27445d;
+    margin-right:15px;
+    transition:0.4s;
+    border:none;
+    cursor:pointer;
+    z-index:100;
+    transition: opacity 0s;
+}
+.close_btn
+{
+    color:#efe9d5;
+    background-color:#27445d;
+    border:none;
+    font-size:20px;
+    cursor:pointer;
+    margin-right:-30px;
+    opacity:1;
+}
+.menu_btn-active
+{
+    opacity:0;
+    transform: opacity 0s;
+    .close_btn
+    {
+        opacity:1;
+    }
+}

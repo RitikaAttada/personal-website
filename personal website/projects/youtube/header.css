@@ -1,0 +1,240 @@
+.header
+{
+    height:55px;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background-color:white;
+    border-bottom: 1px solid rgb(220, 218, 218);
+    z-index:1000;
+}
+.left
+{
+    display:flex;
+    margin-right: 40px;
+    align-items:center;
+}
+.menu
+{
+    height:24px;
+    margin-left:24px;
+    margin-right:20px;
+    cursor:pointer;
+}
+.logo
+{
+    height:20px;
+    cursor:pointer;
+}
+.right
+{
+    width: 180px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-right:20px;
+    flex-shrink:0;
+}
+.upload
+{
+    height:24px;
+    cursor:pointer;
+}
+.youtubeappsone
+{
+    position:relative;
+}
+.youtube-apps
+{
+    height:24px;
+    cursor:pointer;
+}
+.youtubeappsone .tooltip
+{
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.47);
+    color:white;
+    font-family:roboto;
+    padding:4px 8px;
+    border-radius:3px;
+    font-size:12px;
+    bottom:-30px;
+    right:-55px;
+    opacity:0;
+    pointer-events:none;
+    white-space:nowrap;
+    z-index:10002;
+    transition: opacity 0.2s;
+}
+.notify_box
+{
+    position:relative;
+    cursor:pointer;
+}
+.number
+{
+    position:absolute;
+    top:-2px;
+    right:-4px;
+    color:white;
+    font-family:roboto, sans-serif;
+    background-color:rgb(201, 0, 0);
+    font-size:9px;
+    padding:2px 6px;
+    border-radius:10px;
+}
+.notifications
+{
+    height:24px;
+}
+.somebox
+{
+    position:relative;
+}
+.notify_box .tooltip
+{
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.47);
+    color:white;
+    font-family:roboto;
+    padding:4px 8px;
+    border-radius:3px;
+    font-size:12px;
+    bottom:-30px;
+    right:-50px;
+    opacity:0;
+    pointer-events:none;
+    white-space:nowrap;
+    z-index:10002;
+    transition: opacity 0.2s;
+}
+.current-user
+{
+    height:32px;
+    width:32px;
+    object-fit:cover;
+    object-position:top;
+    border-radius:16px;
+    cursor:pointer;
+}
+.middle
+{
+   flex:1;
+   margin-right:35px;
+   max-width:500px;
+   display:flex;
+   align-items:center;
+
+}
+.search
+{
+    flex:1;
+    height:34px;
+    padding-left:10px;
+    font-size:16px;
+    border-width:1px;
+    border-style:solid;
+    border-color:lightgrey;
+    border-radius:2px;
+    box-shadow:inset 1px 2px 3px rgba(0,0,0,0.05)
+}
+.search::placeholder
+{
+    font-family:roboto,sansserif;
+    font-size:16px;
+}
+.search-button
+{
+    height:38px;
+    width:66px;
+    background-color:rgb(243,243,243);
+    border-width:1px;
+    border-style:solid;
+    border-color:lightgrey;
+    margin-left:-1px;
+    margin-right:10px;
+    position:relative;
+    cursor: pointer;
+}
+.search-button .tooltip
+{
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.447);
+    color:white;
+    padding:4px 8px;
+    border-radius:3px;
+    font-size:12px;
+    bottom:-30px;
+    right:0;
+    opacity:0;
+    pointer-events:none;
+    white-space:nowrap;
+    z-index:10002;
+}
+.search-button:hover .tooltip,.voice-search-button:hover .tooltip,.uploadone:hover .tooltip
+,.youtubeappsone:hover .tooltip,.notify_box:hover .tooltip
+{
+    opacity:1;
+}
+.search-icon
+{
+    height:25px;
+    margin-top:4px;
+}
+.mic
+{
+    height:23px;
+    margin-top:4px;
+}
+.voice-search-button
+{
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    border:none;
+    background-color:rgb(245,245,245);
+    cursor:pointer;
+    position:relative;
+}
+.voice-search-button .tooltip
+{
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.47);
+    color:white;
+    font-family:roboto;
+    padding:4px 8px;
+    border-radius:3px;
+    font-size:12px;
+    bottom:-30px;
+    right:-90px;
+    opacity:0;
+    pointer-events:none;
+    white-space:nowrap;
+    z-index:10002;
+    transition: opacity 0.2s;
+}
+.uploadone
+{
+    position:relative;
+}
+.uploadone .tooltip
+{
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.47);
+    color:white;
+    font-family:roboto;
+    padding:4px 8px;
+    border-radius:3px;
+    font-size:12px;
+    bottom:-30px;
+    right:-20px;
+    opacity:0;
+    pointer-events:none;
+    white-space:nowrap;
+    z-index:10002;
+    transition: opacity 0.2s;
+}
