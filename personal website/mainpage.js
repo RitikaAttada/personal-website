@@ -57,3 +57,8 @@ document.getElementById('project-two').addEventListener('click', ()=>{
 document.getElementById('project-three').addEventListener('click', ()=>{
     window.scrollTo({top:0, behavior: 'smooth'});
 });
+    window.open("https://www.linkedin.com/in/ritika-attada-5078162a5/");
+});
+document.getElementById('email').addEventListener('click', ()=>{
+    window.open(`mailto:attadaritika@gmail.com?subject=%20&body=%20`);
+});
